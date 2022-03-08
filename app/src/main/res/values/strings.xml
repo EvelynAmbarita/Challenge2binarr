@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Challenge 2</string>
+    <string name="profile_menu">Profile</string>
+    <string name="search_hint">Cari layanan, makanan, dan tujuan</string>
+    <string name="beranda">Beranda</string>
+    <string name="promo">Promo</string>
+    <string name="pesanan">Pesanan</string>
+    <string name="chat">Chat</string>
+    <string name="search">Search</string>
 </resources>
