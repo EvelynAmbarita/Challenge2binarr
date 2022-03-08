@@ -11,4 +11,5 @@
     <color name="gojek_secondary">#51C273</color>
     <color name="gojek_inactive_bottom_icon">#BBBBBB</color>
     <color name="gojek_text_active">#535353</color>
+    <color name="banner_background">#0081A0</color>
 </resources>

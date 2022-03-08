@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/banner_background_radius.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/banner_list_background.xml" value="0.1045" />
         <entry key="app/src/main/res/drawable/search_view_background.xml" value="0.1045" />
-        <entry key="app/src/main/res/layout/activity_layout1.xml" value="0.19427083333333334" />
+        <entry key="app/src/main/res/layout/activity_layout1.xml" value="0.2350346565847511" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18020833333333333" />
+        <entry key="app/src/main/res/layout/banner_list_layout.xml" value="0.25838012695312496" />
         <entry key="app/src/main/res/layout/card_item.xml" value="0.19427083333333334" />
         <entry key="app/src/main/res/menu/gojek_bottom_nav_bar_menu.xml" value="0.19427083333333334" />
         <entry key="app/src/main/res/menu/gojek_toolbar_menu.xml" value="0.19427083333333334" />

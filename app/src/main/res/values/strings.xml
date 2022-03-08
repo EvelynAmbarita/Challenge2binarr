@@ -7,4 +7,8 @@
     <string name="pesanan">Pesanan</string>
     <string name="chat">Chat</string>
     <string name="search">Search</string>
+    <string name="bayar">Bayar</string>
+    <string name="klik_cek_riwayat"><![CDATA[Klik & cek riwayat]]></string>
+    <string name="saldo">Rp100.000</string>
+    <string name="gopay">gopay</string>
 </resources>

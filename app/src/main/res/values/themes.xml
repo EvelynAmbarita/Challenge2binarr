@@ -29,5 +29,11 @@
         <!-- Customize your theme here. -->
 
     </style>
+    
+    <style name="gopay_text">
+        <item name="android:textSize">24sp</item>
+        <item name="android:scaleX">0.6</item>
+        <item name="android:scaleY">0.6</item>
+    </style>
 
 </resources>
