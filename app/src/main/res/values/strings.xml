@@ -11,4 +11,15 @@
     <string name="klik_cek_riwayat"><![CDATA[Klik & cek riwayat]]></string>
     <string name="saldo">Rp100.000</string>
     <string name="gopay">gopay</string>
+
+    <string-array name="grid_title_list">
+        <item>GoRide</item>
+        <item>GoCar</item>
+        <item>GoFood</item>
+        <item>GoSend</item>
+        <item>GoMart</item>
+        <item>GoPulsa</item>
+        <item>Check In</item>
+        <item>Lainnya</item>
+    </string-array>
 </resources>

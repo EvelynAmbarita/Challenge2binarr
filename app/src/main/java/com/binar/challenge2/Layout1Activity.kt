@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.binar.challenge2.databinding.ActivityLayout1Binding
 import com.binar.challenge2.gojek.BannerAdapter
+import com.binar.challenge2.gojek.GridAdapter
 
 class Layout1Activity : AppCompatActivity() {
 
@@ -24,6 +25,19 @@ class Layout1Activity : AppCompatActivity() {
         layoutManager.stackFromEnd = true
         binding.rvBanner.layoutManager = layoutManager
         binding.rvBanner.adapter = adapter
+
+        val listTitle = resources.getStringArray(R.array.grid_title_list)
+        val listIcon = intArrayOf(R.drawable.ic_goride,
+            R.drawable.ic_gocar,
+            R.drawable.ic_gofood,
+            R.drawable.ic_gosend,
+            R.drawable.ic_gomart,
+            R.drawable.ic_go_pulsa,
+            R.drawable.ic_checkin,
+            R.drawable.ic_lainnya)
+        val gridAdapter = GridAdapter(this, listTitle,listIcon)
+        binding.gvMenu.adapter = gridAdapter
+
 
     }
 
