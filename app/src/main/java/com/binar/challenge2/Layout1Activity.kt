@@ -22,7 +22,7 @@ class Layout1Activity : AppCompatActivity() {
         val adapter = BannerAdapter()
         val layoutManager = LinearLayoutManager(this)
 //        layoutManager.reverseLayout = false
-        layoutManager.stackFromEnd = true
+//        layoutManager.stackFromEnd = true
         binding.rvBanner.layoutManager = layoutManager
         binding.rvBanner.adapter = adapter
 

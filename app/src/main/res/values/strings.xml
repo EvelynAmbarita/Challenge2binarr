@@ -11,6 +11,14 @@
     <string name="klik_cek_riwayat"><![CDATA[Klik & cek riwayat]]></string>
     <string name="saldo">Rp100.000</string>
     <string name="gopay">gopay</string>
+    <string name="akses_cepat">Akses Cepat</string>
+    <string name="content_description">content description</string>
+    <string name="xp_string">193 XP lagi dan ada harta karun</string>
+    <string name="harta_karun">Harta karun bentar lagi hilang</string>
+    <string name="restoran_terdekat">Restoran terdekat</string>
+    <string name="voucher_string">Ada voucher nganggur, nih</string>
+    <string name="card_string">Festival idaman perempuan! 😍</string>
+    <string name="card_desc">Temukan kebutuhan cantik-mu hemat pakai GoPay dengan cashback 50%. klik! 👈</string>
 
     <string-array name="grid_title_list">
         <item>GoRide</item>

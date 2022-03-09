@@ -27,14 +27,18 @@
             android:drawableStart="@drawable/ic_baseline_search_24"
             android:drawablePadding="@dimen/search_bar_padding"
             android:hint="@string/search_hint"
-            android:padding="@dimen/search_bar_padding"
-            android:textSize="@dimen/default_font_size"
+            android:importantForAutofill="no"
             android:inputType="text"
-            android:importantForAutofill="no" />
+            android:padding="@dimen/search_bar_padding"
+            android:textColorHint="#2E7D32"
+            android:textSize="@dimen/default_font_size"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="8dp" />
     </androidx.appcompat.widget.Toolbar>
 
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavBar"
@@ -44,7 +48,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/textView10"
@@ -52,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:fontFamily="sans-serif-black"
-                android:text="Akses Cepat"
+                android:text="@string/akses_cepat"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
@@ -79,13 +83,15 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="16dp"
                     android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/content_description"
                     android:padding="0dp"
                     app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageButton3"
                     app:layout_constraintTop_toTopOf="@+id/imageButton3"
                     app:srcCompat="@drawable/ic_explore"
-                    app:tint="@color/white" />
+                    app:tint="@color/white"
+                    tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/textView4"
@@ -106,13 +112,15 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/content_description"
                     android:padding="0dp"
                     app:layout_constraintBottom_toBottomOf="@+id/imageButton"
                     app:layout_constraintEnd_toStartOf="@+id/imageButton4"
                     app:layout_constraintStart_toEndOf="@+id/imageButton"
                     app:layout_constraintTop_toTopOf="@+id/imageButton"
                     app:srcCompat="@drawable/ic_isi_saldo"
-                    app:tint="@color/white" />
+                    app:tint="@color/white"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -137,6 +145,9 @@
                     android:id="@+id/sv"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
+                    android:nestedScrollingEnabled="true"
+                    android:scrollbars="none"
+                    android:scrollbarAlwaysDrawVerticalTrack="false"
                     android:layout_marginStart="@dimen/saldo_banner_padding"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -147,11 +158,7 @@
                         android:id="@+id/rvBanner"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fadeScrollbars="false"
-                        android:overScrollMode="never"
-                        android:scrollbarAlwaysDrawVerticalTrack="false"
-                        android:scrollbars="none"
-                        app:fastScrollEnabled="false" />
+                        android:overScrollMode="never" />
                 </ScrollView>
 
                 <ImageButton
@@ -162,12 +169,14 @@
                     android:layout_marginTop="24dp"
                     android:layout_marginEnd="8dp"
                     android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/content_description"
                     android:padding="0dp"
                     app:layout_constraintEnd_toStartOf="@+id/imageButton3"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_bayar"
-                    app:tint="@color/white" />
+                    app:tint="@color/white"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/textView"
@@ -223,12 +232,14 @@
                     android:layout_height="0dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/content_description"
                     android:scaleType="centerCrop"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/xp_background" />
+                    app:srcCompat="@drawable/xp_background"
+                    tools:ignore="ImageContrastCheck" />
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -241,7 +252,8 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_bintang"
-                    app:tint="#FF5A00" />
+                    app:tint="#FF5A00"
+                    android:contentDescription="@string/content_description" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -250,7 +262,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="8dp"
                     android:fontFamily="sans-serif-medium"
-                    android:text="193 XP lagi dan ada harta karun"
+                    android:text="@string/xp_string"
                     android:textColor="#000000"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/imageView5"
@@ -273,7 +285,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Harta karun bentar lagi hilang"
+                    android:text="@string/harta_karun"
                     android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                     app:layout_constraintEnd_toEndOf="@+id/progressBar"
@@ -288,7 +300,8 @@
                     app:layout_constraintStart_toStartOf="@+id/progressBar"
                     app:layout_constraintTop_toBottomOf="@+id/progressBar"
                     app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/hourglass" />
+                    app:srcCompat="@drawable/hourglass"
+                    android:contentDescription="@string/content_description" />
 
                 <ImageView
                     android:id="@+id/imageView5"
@@ -299,7 +312,8 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/textView8"
                     app:layout_constraintTop_toTopOf="@+id/textView8"
-                    app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+                    app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:contentDescription="@string/content_description" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -307,21 +321,19 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:layout_marginBottom="32dp"
                 android:background="@drawable/banner_list_background"
                 android:elevation="2dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/textView10"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/textView10"
-                app:layout_constraintTop_toBottomOf="@+id/textView10"
-                app:layout_constraintVertical_bias="0.0">
+                app:layout_constraintTop_toBottomOf="@+id/textView10">
 
                 <ImageView
                     android:id="@+id/imageView9"
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:layout_marginEnd="8dp"
+                    android:contentDescription="@string/content_description"
                     app:layout_constraintBottom_toBottomOf="@+id/textView11"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
@@ -337,6 +349,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/content_description"
                     app:layout_constraintBottom_toTopOf="@+id/divider"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -347,6 +360,7 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:layout_marginEnd="8dp"
+                    android:contentDescription="@string/content_description"
                     app:layout_constraintBottom_toBottomOf="@+id/textView12"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/textView12"
@@ -370,6 +384,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/content_description"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/divider"
@@ -381,7 +396,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="Restoran terdekat"
+                    android:text="@string/restoran_terdekat"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView7"
                     app:layout_constraintEnd_toStartOf="@+id/imageView8"
                     app:layout_constraintStart_toEndOf="@+id/imageView7"
@@ -393,90 +408,23 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="Ada voucher nganggur, nih"
+                    android:text="@string/voucher_string"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView10"
                     app:layout_constraintEnd_toStartOf="@+id/imageView8"
                     app:layout_constraintStart_toEndOf="@+id/imageView10"
                     app:layout_constraintTop_toTopOf="@+id/imageView10" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="16dp"-->
-<!--                android:layout_marginBottom="32dp"-->
-<!--                android:background="@drawable/banner_list_background"-->
-<!--                android:clickable="true"-->
-<!--                android:focusable="true"-->
-<!--                android:foreground="?android:attr/selectableItemBackground"-->
-<!--                android:elevation="2dp"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"-->
-<!--                app:layout_constraintStart_toStartOf="@+id/constraintLayout3"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">-->
-
-<!--                <ImageView-->
-<!--                    android:id="@+id/imageView11"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="180dp"-->
-<!--                    android:scaleType="centerCrop"-->
-<!--                    app:layout_constraintCircleRadius="10dp"-->
-<!--                    app:layout_constraintEnd_toEndOf="parent"-->
-<!--                    app:layout_constraintStart_toStartOf="parent"-->
-<!--                    app:layout_constraintTop_toTopOf="parent"-->
-<!--                    app:srcCompat="@drawable/gojek_card_image" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/textView13"-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="16dp"-->
-<!--                    android:layout_marginEnd="16dp"-->
-<!--                    android:fontFamily="sans-serif-black"-->
-<!--                    android:text="Festival idaman perempuan! 😍"-->
-<!--                    android:textColor="#000000"-->
-<!--                    app:layout_constraintEnd_toEndOf="parent"-->
-<!--                    app:layout_constraintStart_toStartOf="parent"-->
-<!--                    app:layout_constraintTop_toBottomOf="@+id/imageView11" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/textView14"-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginTop="8dp"-->
-<!--                    android:layout_marginBottom="16dp"-->
-<!--                    android:singleLine="false"-->
-<!--                    android:text="Temukan kebutuhan cantik-mu hemat pakai GoPay dengan cashback 50%. klik! 👈"-->
-<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                    app:layout_constraintEnd_toEndOf="@+id/textView13"-->
-<!--                    app:layout_constraintHorizontal_bias="0.0"-->
-<!--                    app:layout_constraintStart_toStartOf="@+id/textView13"-->
-<!--                    app:layout_constraintTop_toBottomOf="@+id/textView13"-->
-<!--                    app:layout_constraintVertical_bias="0.0" />-->
-<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-<!--            <include-->
-<!--                layout="@layout/card_item"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="16dp"-->
-<!--                android:layout_marginBottom="32dp"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"-->
-<!--                app:layout_constraintStart_toStartOf="@+id/constraintLayout3"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />-->
-
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="32dp"
                 android:background="@drawable/banner_list_background"
                 android:clickable="true"
+                android:elevation="2dp"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:elevation="2dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"
                 app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
@@ -487,6 +435,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="180dp"
                     android:scaleType="centerCrop"
+                    app:shapeAppearance="@style/card_radius"
                     app:layout_constraintCircleRadius="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -501,7 +450,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
                     android:fontFamily="sans-serif-black"
-                    android:text="Festival idaman perempuan! 😍"
+                    android:text="@string/card_string"
                     android:textColor="#000000"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -514,7 +463,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="16dp"
                     android:singleLine="false"
-                    android:text="Temukan kebutuhan cantik-mu hemat pakai GoPay dengan cashback 50%. klik! 👈"
+                    android:text="@string/card_desc"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/textView13"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -525,7 +474,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavBar"
