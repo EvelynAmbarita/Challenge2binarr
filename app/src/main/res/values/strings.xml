@@ -19,6 +19,14 @@
     <string name="voucher_string">Ada voucher nganggur, nih</string>
     <string name="card_string">Festival idaman perempuan! 😍</string>
     <string name="card_desc">Temukan kebutuhan cantik-mu hemat pakai GoPay dengan cashback 50%. klik! 👈</string>
+    <string name="tokped_search">Cari powerbank</string>
+    <string name="mail">Mail</string>
+    <string name="feed">Feed</string>
+    <string name="notification">Notification</string>
+    <string name="cart">Cart</string>
+    <string name="more">More</string>
+    <string name="official_store">Official Store</string>
+    <string name="whislist">Whislist</string>
 
     <string-array name="grid_title_list">
         <item>GoRide</item>

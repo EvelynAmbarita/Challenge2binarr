@@ -10,6 +10,9 @@
     <color name="gojek_primary">#31B057</color>
     <color name="gojek_secondary">#51C273</color>
     <color name="gojek_inactive_bottom_icon">#BBBBBB</color>
+    <color name="tokped_inactive_bottom_icon">#8C8C8C</color>
     <color name="gojek_text_active">#535353</color>
     <color name="banner_background">#0081A0</color>
+    <color name="tokped_primary">#4FD15A</color>
+    <color name="tokped_secondary">#80EB93</color>
 </resources>

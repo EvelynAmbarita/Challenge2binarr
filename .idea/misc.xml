@@ -5,14 +5,23 @@
       <map>
         <entry key="app/src/main/res/drawable/banner_background_radius.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/banner_list_background.xml" value="0.1045" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.1045" />
+        <entry key="app/src/main/res/drawable/ic_home_selected.xml" value="0.1045" />
+        <entry key="app/src/main/res/drawable/ic_official.xml" value="0.1045" />
+        <entry key="app/src/main/res/drawable/ic_official_selected.xml" value="0.1045" />
         <entry key="app/src/main/res/drawable/search_view_background.xml" value="0.1045" />
+        <entry key="app/src/main/res/drawable/tokped_search_view_radius.xml" value="0.1045" />
         <entry key="app/src/main/res/layout/activity_layout1.xml" value="0.19674682617187503" />
+        <entry key="app/src/main/res/layout/activity_layout2.xml" value="0.19427083333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18020833333333333" />
         <entry key="app/src/main/res/layout/banner_list_layout.xml" value="0.25838012695312496" />
         <entry key="app/src/main/res/layout/card_item.xml" value="0.19427083333333334" />
         <entry key="app/src/main/res/layout/gojek_grid_view_layout.xml" value="0.19427083333333334" />
+        <entry key="app/src/main/res/layout/tokped_toolbar.xml" value="0.24704182942708336" />
         <entry key="app/src/main/res/menu/gojek_bottom_nav_bar_menu.xml" value="0.19427083333333334" />
         <entry key="app/src/main/res/menu/gojek_toolbar_menu.xml" value="0.19427083333333334" />
+        <entry key="app/src/main/res/menu/tokped_bottom_nav_menu.xml" value="0.19427083333333334" />
+        <entry key="app/src/main/res/menu/tokped_toolbar_menu.xml" value="0.771875" />
       </map>
     </option>
   </component>
