@@ -48,4 +48,15 @@
     <string name="menu_tokped_7">Keuangan</string>
     <string name="menu_tokped_8">Travel &amp;\nEntertaiment</string>
     <string name="menu_tokped_9">Perlengkapan\nPesta</string>
+
+    <string name="scnd_menu_tokped_1">Peduli\nLindungi</string>
+    <string name="scnd_menu_tokped_2">Bazar Hari\nIni</string>
+    <string name="scnd_menu_tokped_3">Live\nShopping</string>
+    <string name="scnd_menu_tokped_4">Tokopedia\nSeru</string>
+    <string name="scnd_menu_tokped_5">Bangga\nLokal</string>
+    <string name="scnd_menu_tokped_6">Bayar di\nTempat</string>
+    <string name="scnd_menu_tokped_7">Promo di\nSurabaya</string>
+
+
+    <string name="strikethrough_price"><strike>Rp94.000</strike></string>
 </resources>

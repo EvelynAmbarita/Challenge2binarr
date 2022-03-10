@@ -16,6 +16,13 @@ class Layout2Activity : AppCompatActivity() {
         binding = ActivityLayout2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.barangLayout1.progressBar2.isEnabled = false
+        binding.barangLayout2.progressBar2.isEnabled = false
+        binding.barangLayout3.progressBar2.isEnabled = false
+        binding.barangLayout4.progressBar2.isEnabled = false
+
+
+
 //        val listTitle = resources.getStringArray(R.array.menu_tokped_list_title)
 //        val listIcon = intArrayOf(R.drawable.ic_official_selected,
 //            R.drawable.ic_lainnya,
