@@ -40,7 +40,8 @@
         <item name="colorSecondaryVariant">@color/tokped_primary</item>
         <item name="colorOnSecondary">@color/black</item>
 
-        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/tokped_primary</item>
+
         <item name="android:windowTranslucentNavigation">false</item>
         <!-- Customize your theme here. -->
 

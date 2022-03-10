@@ -52,7 +52,7 @@
                     android:layout_marginBottom="42dp"
                     android:fontFamily="sans-serif-medium"
                     android:text="@string/dikirim_ke"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_down_24"
                     app:drawableStartCompat="@drawable/ic_baseline_place_24" />
             </FrameLayout>
@@ -105,12 +105,13 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="16dp"
+                    android:contentDescription="@string/content_description"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/guideline3"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_pentagon_fill_svgrepo_com"
                     app:tint="#FF9800"
-                    android:contentDescription="@string/content_description" />
+                    tools:ignore="ImageContrastCheck" />
 
 
                 <androidx.constraintlayout.widget.Guideline
@@ -127,11 +128,12 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="16dp"
+                    android:contentDescription="@string/content_description"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_wallet"
-                    android:contentDescription="@string/content_description" />
+                    tools:ignore="ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/textView15"
@@ -176,233 +178,108 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle1"
+                        android:text="@string/menu_tokped_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="24dp"
-
                         android:layout_marginEnd="16dp"
-                        android:orientation="vertical">
+                        android:fontFamily="sans-serif-medium"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_official_selected" />
 
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon1"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_official_selected"
-                            android:contentDescription="@string/content_description" />
-
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/menu_tokped_1"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginEnd="16dp"
-
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon2"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_lainnya"
-                            android:contentDescription="@string/content_description" />
-
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/menu_tokped_2"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginEnd="16dp"
-
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon3"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_picnic_basket_picnic_svgrepo_com"
-                            android:contentDescription="@string/content_description" />
-
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/menu_tokped_3"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginEnd="16dp"
-
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon4"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_electronics_svgrepo_com"
-                            android:contentDescription="@string/content_description" />
-
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/menu_tokped_4"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginEnd="16dp"
-
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon5"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_scroll_svgrepo_com"
-                            android:contentDescription="@string/content_description" />
-
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/menu_tokped_5"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginEnd="16dp"
-
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon6"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_stationery_svgrepo_com"
-                            android:contentDescription="@string/content_description" />
-
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/menu_tokped_6"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle2"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginEnd="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/menu_tokped_2"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_more_app_svgrepo_com" />
 
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon7"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_money_svgrepo_com"
-                            android:contentDescription="@string/content_description" />
-
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle7"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/menu_tokped_7"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle3"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginEnd="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/menu_tokped_4"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_picnic_basket_picnic_svgrepo_com" />
 
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon8"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_plane_svgrepo_com"
-                            android:contentDescription="@string/content_description" />
-
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/menu_tokped_8"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle4"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginEnd="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/menu_tokped_3"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_electronics_svgrepo_com" />
 
-                        android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/menu_tokped_5"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_scroll_svgrepo_com" />
 
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon9"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_party_hat_birthday_svgrepo_com"
-                            android:contentDescription="@string/content_description" />
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/menu_tokped_6"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_stationery_svgrepo_com" />
 
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle9"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/menu_tokped_9"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/menu_tokped_7"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_money_svgrepo_com" />
+
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/menu_tokped_8"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_plane_svgrepo_com" />
+
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/menu_tokped_9"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_party_hat_birthday_svgrepo_com" />
 
                 </LinearLayout>
+
             </HorizontalScrollView>
 
             <HorizontalScrollView
@@ -410,6 +287,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
+                android:contentDescription="@string/content_description"
                 android:scrollbars="none"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -458,182 +336,84 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="24dp"
-
-                        android:layout_marginEnd="16dp"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon10"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_people_svgrepo_com"
-                            app:tint="#407EDD"
-                            android:contentDescription="@string/content_description" />
-
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle10"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/scnd_menu_tokped_1"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginEnd="16dp"
-
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon12"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_shop_svgrepo_com"
-                            android:contentDescription="@string/content_description" />
-
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle12"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/scnd_menu_tokped_2"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle10"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
                         android:layout_marginEnd="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/scnd_menu_tokped_1"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_people_svgrepo_com"
+                        app:drawableTint="#2776D6" />
 
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon17"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_play_svgrepo_com"
-                            android:contentDescription="@string/content_description" />
-
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle17"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/scnd_menu_tokped_3"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginEnd="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/scnd_menu_tokped_2"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_shop_svgrepo_com" />
 
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon13"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_joystick_svgrepo_com"
-                            android:contentDescription="@string/content_description" />
-
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle13"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/scnd_menu_tokped_4"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginEnd="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/scnd_menu_tokped_3"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_play_svgrepo_com" />
 
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon14"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_lokal_heart"
-                            android:contentDescription="@string/content_description" />
-
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle14"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/scnd_menu_tokped_5"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginEnd="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/scnd_menu_tokped_4"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_joystick_svgrepo_com" />
 
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon15"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_delivery_box_svgrepo_com"
-                            android:contentDescription="@string/content_description" />
-
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle15"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/scnd_menu_tokped_6"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginEnd="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/scnd_menu_tokped_5"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_lokal_heart" />
 
-                        android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/scnd_menu_tokped_6"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_delivery_box_svgrepo_com" />
 
-                        <ImageView
-                            android:id="@+id/ivGridMenuIcon16"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_place_marker_svgrepo_com"
-                            android:contentDescription="@string/content_description" />
-
-                        <TextView
-                            android:id="@+id/tvGridMenuTitle16"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="@string/scnd_menu_tokped_7"
-                            android:textAlignment="center"
-                            android:textSize="12sp" />
-                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvGridMenuTitle16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/scnd_menu_tokped_7"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/ic_place_marker_svgrepo_com" />
 
 
                 </LinearLayout>
@@ -788,7 +568,8 @@
                 app:layout_constraintEnd_toStartOf="@+id/textView26"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/textView24"
-                app:layout_constraintTop_toTopOf="@+id/textView24" />
+                app:layout_constraintTop_toTopOf="@+id/textView24"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
 
             <ImageView
                 android:id="@+id/imageView17"
