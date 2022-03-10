@@ -38,4 +38,14 @@
         <item>Check In</item>
         <item>Lainnya</item>
     </string-array>
+
+    <string name="menu_tokped_1">Official\nStore</string>
+    <string name="menu_tokped_2">Lihat\nSemua</string>
+    <string name="menu_tokped_3">Elektronik</string>
+    <string name="menu_tokped_4">Kebutuhan\nHarian</string>
+    <string name="menu_tokped_5">Top-Up &amp;\nTagihan</string>
+    <string name="menu_tokped_6">Office &amp;\nStationery</string>
+    <string name="menu_tokped_7">Keuangan</string>
+    <string name="menu_tokped_8">Travel &amp;\nEntertaiment</string>
+    <string name="menu_tokped_9">Perlengkapan\nPesta</string>
 </resources>

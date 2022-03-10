@@ -39,6 +39,10 @@ class Layout1Activity : AppCompatActivity() {
         binding.gvMenu.adapter = gridAdapter
 
 
+        binding.bottomNavBar.getOrCreateBadge(R.id.promo).isVisible = true
+        binding.bottomNavBar.getOrCreateBadge(R.id.chat).isVisible = true
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
