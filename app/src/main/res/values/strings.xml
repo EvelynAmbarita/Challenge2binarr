@@ -70,4 +70,9 @@
     <string name="berakhir_dalam">Berakhir dalam</string>
     <string name="waktu">09 menit 26 detik</string>
     <string name="video_menarik_untukmu">Video menarik untukmu</string>
+    <string name="placeholder">placeholder</string>
+    <string name="harga">Rp 69.600</string>
+    <string name="kota">Jakarta Selatan</string>
+    <string name="persen_diskon">26%</string>
+    <string name="segera_habis">Segera Habis</string>
 </resources>

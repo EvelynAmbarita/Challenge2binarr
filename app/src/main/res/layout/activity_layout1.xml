@@ -35,6 +35,7 @@
             tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="8dp" />
+
     </androidx.appcompat.widget.Toolbar>
 
 

@@ -10,13 +10,14 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/ic_home" />
+        app:srcCompat="@drawable/ic_home"
+        android:contentDescription="@string/content_description" />
 
     <TextView
         android:id="@+id/tvGridMenuTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
-        android:text="TextView"
+        android:text="@string/placeholder"
         android:textAlignment="center" />
 </LinearLayout>
