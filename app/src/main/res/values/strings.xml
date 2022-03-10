@@ -59,4 +59,15 @@
 
 
     <string name="strikethrough_price"><strike>Rp94.000</strike></string>
+    <string name="dikirim_ke">Dikirim ke alamat rumah firmansyah</string>
+    <string name="coins">164.000 Coins</string>
+    <string name="tokped_saldo">Rp109.048</string>
+    <string name="member">Member Gold</string>
+    <string name="kupon">23 Kupon</string>
+    <string name="tokped_coins">164.000 Coins</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="kejar_diskon">Kejar diskon</string>
+    <string name="berakhir_dalam">Berakhir dalam</string>
+    <string name="waktu">09 menit 26 detik</string>
+    <string name="video_menarik_untukmu">Video menarik untukmu</string>
 </resources>

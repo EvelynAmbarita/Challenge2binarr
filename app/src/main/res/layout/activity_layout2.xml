@@ -51,7 +51,7 @@
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="42dp"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Dikirim ke alamat rumah firmansyah"
+                    android:text="@string/dikirim_ke"
                     android:textColor="#FFFFFF"
                     app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_down_24"
                     app:drawableStartCompat="@drawable/ic_baseline_place_24" />
@@ -75,7 +75,7 @@
                     android:id="@+id/textView20"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="164.000 Coins"
+                    android:text="@string/kupon"
                     android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView16"
                     app:layout_constraintEnd_toEndOf="@+id/textView19"
@@ -89,7 +89,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="4dp"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Rp109.048"
+                    android:text="@string/member"
                     android:textColor="#000000"
                     android:textSize="12sp"
                     app:layout_constraintBottom_toTopOf="@+id/textView20"
@@ -109,7 +109,8 @@
                     app:layout_constraintStart_toEndOf="@id/guideline3"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_pentagon_fill_svgrepo_com"
-                    app:tint="#FF9800" />
+                    app:tint="#FF9800"
+                    android:contentDescription="@string/content_description" />
 
 
                 <androidx.constraintlayout.widget.Guideline
@@ -129,7 +130,8 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_wallet" />
+                    app:srcCompat="@drawable/ic_wallet"
+                    android:contentDescription="@string/content_description" />
 
                 <TextView
                     android:id="@+id/textView15"
@@ -138,7 +140,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="4dp"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Rp109.048"
+                    android:text="@string/tokped_saldo"
                     android:textColor="#000000"
                     android:textSize="12sp"
                     app:layout_constraintBottom_toTopOf="@+id/textView16"
@@ -150,7 +152,7 @@
                     android:id="@+id/textView16"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="164.000 Coins"
+                    android:text="@string/tokped_coins"
                     android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView15"
                     app:layout_constraintEnd_toEndOf="@+id/textView15"
@@ -187,7 +189,8 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_official_selected" />
+                            app:srcCompat="@drawable/ic_official_selected"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle1"
@@ -211,7 +214,8 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_lainnya" />
+                            app:srcCompat="@drawable/ic_lainnya"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle2"
@@ -235,7 +239,8 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_picnic_basket_picnic_svgrepo_com" />
+                            app:srcCompat="@drawable/ic_picnic_basket_picnic_svgrepo_com"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle3"
@@ -259,7 +264,8 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_electronics_svgrepo_com" />
+                            app:srcCompat="@drawable/ic_electronics_svgrepo_com"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle4"
@@ -283,7 +289,8 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_scroll_svgrepo_com" />
+                            app:srcCompat="@drawable/ic_scroll_svgrepo_com"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle5"
@@ -307,7 +314,8 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_stationery_svgrepo_com" />
+                            app:srcCompat="@drawable/ic_stationery_svgrepo_com"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle6"
@@ -331,7 +339,8 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_money_svgrepo_com" />
+                            app:srcCompat="@drawable/ic_money_svgrepo_com"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle7"
@@ -355,7 +364,8 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_plane_svgrepo_com" />
+                            app:srcCompat="@drawable/ic_plane_svgrepo_com"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle8"
@@ -379,7 +389,8 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_party_hat_birthday_svgrepo_com" />
+                            app:srcCompat="@drawable/ic_party_hat_birthday_svgrepo_com"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle9"
@@ -461,7 +472,8 @@
                             android:layout_height="32dp"
                             android:layout_gravity="center"
                             app:srcCompat="@drawable/ic_people_svgrepo_com"
-                            app:tint="#407EDD" />
+                            app:tint="#407EDD"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle10"
@@ -485,7 +497,8 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_shop_svgrepo_com" />
+                            app:srcCompat="@drawable/ic_shop_svgrepo_com"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle12"
@@ -509,7 +522,8 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_play_svgrepo_com" />
+                            app:srcCompat="@drawable/ic_play_svgrepo_com"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle17"
@@ -533,7 +547,8 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_joystick_svgrepo_com" />
+                            app:srcCompat="@drawable/ic_joystick_svgrepo_com"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle13"
@@ -557,7 +572,8 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_lokal_heart" />
+                            app:srcCompat="@drawable/ic_lokal_heart"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle14"
@@ -581,7 +597,8 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_delivery_box_svgrepo_com" />
+                            app:srcCompat="@drawable/ic_delivery_box_svgrepo_com"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle15"
@@ -605,7 +622,8 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_place_marker_svgrepo_com" />
+                            app:srcCompat="@drawable/ic_place_marker_svgrepo_com"
+                            android:contentDescription="@string/content_description" />
 
                         <TextView
                             android:id="@+id/tvGridMenuTitle16"
@@ -629,7 +647,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:fontFamily="sans-serif-black"
-                android:text="Video menarik untukmu"
+                android:text="@string/video_menarik_untukmu"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toStartOf="@+id/textView22"
@@ -644,7 +662,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="sans-serif-black"
-                android:text="Lihat Semua"
+                android:text="@string/lihat_semua"
                 android:textColor="@color/gojek_primary"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView23"
@@ -658,7 +676,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-black"
-                android:text="Lihat Semua"
+                android:text="@string/lihat_semua"
                 android:textColor="@color/gojek_primary"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/button2"
@@ -678,7 +696,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
 
                     <include
                         layout="@layout/tokped_video_list_layout"
@@ -728,7 +747,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="sans-serif-black"
-                android:text="Kejar diskon"
+                android:text="@string/kejar_diskon"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="@+id/horizontalScrollView3"
@@ -741,7 +760,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Berakhir dalam"
+                android:text="@string/berakhir_dalam"
                 android:textColor="#000000"
                 app:layout_constraintStart_toStartOf="@+id/textView25"
                 app:layout_constraintTop_toBottomOf="@+id/textView25" />
@@ -753,18 +772,17 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:backgroundTint="#D62222"
-                android:drawableLeft="@drawable/ic_clock_svgrepo_com"
+                android:drawableStart="@drawable/ic_clock_svgrepo_com"
                 android:drawableTint="@color/white"
                 android:minHeight="0dp"
-                android:paddingLeft="4dp"
+                android:paddingStart="4dp"
                 android:paddingTop="2dp"
                 android:paddingEnd="8dp"
-                android:paddingRight="2dp"
                 android:paddingBottom="2dp"
-                android:text="09 menit 26 detik"
+                android:text="@string/waktu"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
-                android:textSize="10sp"
+                android:textSize="11sp"
                 app:iconPadding="4dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView24"
                 app:layout_constraintEnd_toStartOf="@+id/textView26"
@@ -782,7 +800,8 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button2"
-                app:srcCompat="@drawable/green_background" />
+                app:srcCompat="@drawable/green_background"
+                android:contentDescription="@string/content_description" />
 
             <HorizontalScrollView
                 android:layout_width="0dp"
@@ -798,7 +817,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
 
                     <include
                         android:id="@+id/barangLayout1"
