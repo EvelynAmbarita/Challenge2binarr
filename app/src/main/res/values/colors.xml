@@ -14,6 +14,8 @@
     <color name="gojek_text_active">#535353</color>
     <color name="banner_background">#0081A0</color>
     <color name="tokped_primary">#4FD15A</color>
+    <color name="tokped_primary_opacity">#89C58E</color>
+    <color name="tokped_primary_opacity2">#7C4FD15A</color>
     <color name="tokped_secondary">#80EB93</color>
     <color name="transparent">#00FFFFFF</color>
 </resources>

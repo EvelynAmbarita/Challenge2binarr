@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:clickable="true"
-    android:focusable="true"
-    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_height="wrap_content"
     android:background="@drawable/banner_list_background"
-    android:elevation="2dp">
+    android:clickable="true"
+    android:elevation="2dp"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView19"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        app:shapeAppearance="@style/tokped_banner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/tokped_banner"
         app:srcCompat="@drawable/gojek_card_image" />
 
     <Button
@@ -32,15 +31,14 @@
         android:drawableTint="@color/white"
         android:minWidth="0dp"
         android:minHeight="0dp"
-        android:paddingLeft="4dp"
+        android:paddingStart="4dp"
         android:paddingTop="2dp"
         android:paddingEnd="8dp"
-        android:paddingRight="2dp"
         android:paddingBottom="2dp"
-        android:text="2.5rb"
+        android:text="@string/view"
         android:textAlignment="textStart"
         android:textAllCaps="false"
-        android:textSize="8sp"
+        android:textSize="11sp"
         app:iconPadding="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -48,7 +46,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnKupon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -58,15 +56,14 @@
         android:drawableTint="@color/white"
         android:minWidth="0dp"
         android:minHeight="0dp"
-        android:paddingLeft="4dp"
+        android:paddingStart="4dp"
         android:paddingTop="2dp"
         android:paddingEnd="8dp"
-        android:paddingRight="2dp"
         android:paddingBottom="2dp"
-        android:text="Kupon spesial"
+        android:text="@string/kupon_spesial"
         android:textAlignment="textStart"
         android:textAllCaps="false"
-        android:textSize="8sp"
+        android:textSize="11sp"
         app:iconPadding="4dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,17 +75,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".75" />
+        app:layout_constraintGuide_percent=".70" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="#EDFFFFFF"
-        app:shapeAppearance="@style/card_bottom_radius"
+        android:src="#C4FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline4" />
+        app:layout_constraintTop_toBottomOf="@id/guideline4"
+        app:shapeAppearance="@style/card_bottom_radius" />
 
     <TextView
         android:id="@+id/textView17"
@@ -97,8 +94,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
-        android:text="Keep and clam with UCHII"
-        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:text="@string/video_title"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/textView18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -111,8 +109,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
-        android:text="uchii store"
-        android:textSize="10sp"
+        android:text="@string/store_name"
+        android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView17"
         app:layout_constraintHorizontal_bias="0.0"

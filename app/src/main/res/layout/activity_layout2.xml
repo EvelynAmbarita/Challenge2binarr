@@ -459,9 +459,9 @@
                 android:text="@string/lihat_semua"
                 android:textColor="@color/gojek_primary"
                 android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="@+id/button2"
+                app:layout_constraintBottom_toBottomOf="@+id/tvWaktu"
                 app:layout_constraintEnd_toEndOf="@+id/textView25"
-                app:layout_constraintTop_toTopOf="@+id/button2" />
+                app:layout_constraintTop_toTopOf="@+id/tvWaktu" />
 
             <HorizontalScrollView
                 android:id="@+id/horizontalScrollView3"
@@ -480,41 +480,39 @@
                     android:baselineAligned="false">
 
                     <include
+                        android:id="@+id/videoLayout1"
                         layout="@layout/tokped_video_list_layout"
-                        android:layout_width="128dp"
-                        android:layout_height="180dp"
+                        android:layout_width="138dp"
+                        android:layout_height="200dp"
                         android:layout_marginStart="24dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="4dp"
                         android:layout_weight="1" />
 
                     <include
+                        android:id="@+id/videoLayout2"
                         layout="@layout/tokped_video_list_layout"
-                        android:layout_width="128dp"
-                        android:layout_height="180dp"
+                        android:layout_width="138dp"
+                        android:layout_height="200dp"
                         android:layout_marginEnd="8dp"
                         android:layout_weight="1" />
 
                     <include
+                        android:id="@+id/videoLayout3"
                         layout="@layout/tokped_video_list_layout"
-                        android:layout_width="128dp"
-                        android:layout_height="180dp"
+                        android:layout_width="138dp"
+                        android:layout_height="200dp"
                         android:layout_marginEnd="8dp"
                         android:layout_weight="1" />
 
                     <include
+                        android:id="@+id/videoLayout4"
                         layout="@layout/tokped_video_list_layout"
-                        android:layout_width="128dp"
-                        android:layout_height="180dp"
+                        android:layout_width="138dp"
+                        android:layout_height="200dp"
                         android:layout_marginEnd="8dp"
                         android:layout_weight="1" />
 
-                    <include
-                        layout="@layout/tokped_video_list_layout"
-                        android:layout_width="128dp"
-                        android:layout_height="180dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_weight="1" />
 
                 </LinearLayout>
             </HorizontalScrollView>
@@ -545,31 +543,32 @@
                 app:layout_constraintStart_toStartOf="@+id/textView25"
                 app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
-            <Button
-                android:id="@+id/button2"
+            <TextView
+                android:id="@+id/tvWaktu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
+                android:background="@drawable/banner_list_background"
                 android:backgroundTint="#D62222"
-                android:drawableLeft="@drawable/ic_clock_svgrepo_com"
-                android:drawableTint="@color/white"
-                android:minHeight="0dp"
+                android:textColor="@color/white"
                 android:paddingStart="4dp"
+                android:fontFamily="sans-serif-medium"
                 android:paddingTop="2dp"
                 android:paddingEnd="8dp"
                 android:paddingBottom="2dp"
-                android:text="@string/waktu"
+                android:text=""
                 android:textAlignment="textStart"
-                android:textAllCaps="false"
                 android:textSize="11sp"
-                app:iconPadding="4dp"
+                android:drawablePadding="4dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView24"
                 app:layout_constraintEnd_toStartOf="@+id/textView26"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/textView24"
                 app:layout_constraintTop_toTopOf="@+id/textView24"
-                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck"
+                app:drawableTint="@color/white"
+                app:drawableLeftCompat="@drawable/ic_clock_svgrepo_com" />
 
             <ImageView
                 android:id="@+id/imageView17"
@@ -580,7 +579,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button2"
+                app:layout_constraintTop_toBottomOf="@+id/tvWaktu"
                 app:srcCompat="@drawable/green_background"
                 android:contentDescription="@string/content_description" />
 
@@ -593,13 +592,14 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/imageView17">
+                app:layout_constraintTop_toTopOf="@id/imageView17"
+                app:layout_constraintVertical_bias="0.0">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:baselineAligned="false">
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
 
                     <include
                         android:id="@+id/barangLayout1"

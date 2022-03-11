@@ -75,4 +75,8 @@
     <string name="kota">Jakarta Selatan</string>
     <string name="persen_diskon">26%</string>
     <string name="segera_habis">Segera Habis</string>
+    <string name="view">2.5rb</string>
+    <string name="kupon_spesial">Kupon spesial</string>
+    <string name="video_title">Keep and clam with UCHII</string>
+    <string name="store_name">uchii store</string>
 </resources>
