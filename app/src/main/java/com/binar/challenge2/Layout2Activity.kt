@@ -55,14 +55,22 @@ class Layout2Activity : AppCompatActivity() {
             val headerHeight = binding.header.height
             when {
                 scrollY>headerHeight -> {
+                    //ganti warna toolbar dan statusbar ketika scroll lebih dari height header
                     changeToolbarStyle(false)
                     val window = this.window
+
                     val greenTokped = ContextCompat.getColor(this, R.color.tokped_primary)
                     val white = ContextCompat.getColor(this, R.color.white)
-                    WindowInsetsControllerCompat(window,window.decorView).isAppearanceLightStatusBars = true
+
+                    //ganti statusbar textcolor jadi hitam
+                    WindowInsetsControllerCompat(window,window.decorView)
+                        .isAppearanceLightStatusBars = true
+
                     if (!isAlreadyAnimateWhite){
+                        //transisi animasi
                         val colorAnimate = ValueAnimator.ofObject(ArgbEvaluator(),greenTokped,white)
                         colorAnimate.addUpdateListener {
+                            //ganti warna toolbar dan statusbar sesuai transisi warna
                             window.statusBarColor = it.animatedValue as Int
                             binding.include.clToolbar.setBackgroundColor(it.animatedValue as Int)
                         }
@@ -79,7 +87,10 @@ class Layout2Activity : AppCompatActivity() {
                     val window = this.window
                     val greenTokped = ContextCompat.getColor(this, R.color.tokped_primary)
                     val white = ContextCompat.getColor(this, R.color.white)
-                    WindowInsetsControllerCompat(window,window.decorView).isAppearanceLightStatusBars = false
+
+                    //ganti text color dari status bar jadi putih
+                    WindowInsetsControllerCompat(window,window.decorView)
+                        .isAppearanceLightStatusBars = false
 
                     if (!isAlreadyAnimateGreen){
                         val colorAnimate = ValueAnimator.ofObject(ArgbEvaluator(),white,greenTokped)

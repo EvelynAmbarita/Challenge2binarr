@@ -1,564 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
      android:layout_height="wrap_content"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="10dp"
+    android:elevation="2dp">
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginBottom="32dp"-->
+<!--        android:background="@drawable/banner_list_background"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true"-->
+<!--        android:foreground="?android:attr/selectableItemBackground"-->
+<!--        android:elevation="2dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/constraintLayout3"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView11"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="180dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            app:layout_constraintCircleRadius="10dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/gojek_card_image" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView13"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:fontFamily="sans-serif-black"-->
+<!--            android:text="Festival idaman perempuan! 😍"-->
+<!--            android:textColor="#000000"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView11" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView14"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:singleLine="false"-->
+<!--            android:text="Temukan kebutuhan cantik-mu hemat pakai GoPay dengan cashback 50%. klik! 👈"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textView13"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textView13"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView13"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
-<!--    scrollviewmu-->
-<!--    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--        xmlns:tools="http://schemas.android.com/tools"-->
+<!--    <LinearLayout-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="match_parent"-->
-<!--        tools:context=".MainActivity">-->
-
-<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content">-->
-
-<!--            <LinearLayout-->
-<!--                android:id="@+id/toolbar"-->
-<!--                android:orientation="horizontal"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                android:background="@color/green60"-->
-<!--                android:padding="15dp"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content">-->
-
-<!--                <EditText-->
-<!--                    android:text="@string/search"-->
-<!--                    android:textColor="@color/black40"-->
-<!--                    android:background="@drawable/shape_radius"-->
-<!--                    android:drawableLeft="@drawable/ic_baseline_search"-->
-<!--                    android:drawablePadding="10dp"-->
-<!--                    android:padding="10dp"-->
-<!--                    android:layout_marginStart="10dp"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content" />-->
-
-<!--                <ImageButton-->
-<!--                    android:src="@drawable/ic_baseline_person"-->
-<!--                    android:background="@drawable/shape_radius"-->
-<!--                    android:padding="10dp"-->
-<!--                    android:layout_marginStart="15dp"-->
-<!--                    android:layout_marginEnd="10dp"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content" />-->
-
-<!--            </LinearLayout>-->
-
-<!--            <LinearLayout-->
-<!--                android:id="@+id/toolbar_second"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/toolbar"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                android:orientation="horizontal"-->
-<!--                android:background="@drawable/shape_second"-->
-<!--                android:padding="10dp"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:layout_marginStart="10dp"-->
-<!--                android:layout_marginEnd="10dp"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content">-->
-
-<!--                <LinearLayout-->
-<!--                    android:background="@drawable/shpae_rectangle"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:layout_marginStart="10dp"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:layout_marginBottom="5dp"-->
-<!--                    android:layout_width="175dp"-->
-<!--                    android:layout_height="85dp">-->
-
-<!--                    <ImageView-->
-<!--                        android:src="@drawable/ic_gopay"-->
-<!--                        android:layout_marginTop="5dp"-->
-<!--                        android:layout_marginStart="8dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                    <TextView-->
-<!--                        android:text="Rp109.048"-->
-<!--                        android:fontFamily="sans-serif-medium"-->
-<!--                        android:textStyle="bold"-->
-<!--                        android:textSize="18dp"-->
-<!--                        android:layout_marginTop="5dp"-->
-<!--                        android:layout_marginStart="8dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                    <TextView-->
-<!--                        android:text="@string/history"-->
-<!--                        android:textColor="@color/green60"-->
-<!--                        android:textSize="18dp"-->
-<!--                        android:layout_marginTop="5dp"-->
-<!--                        android:layout_marginStart="8dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                </LinearLayout>-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_marginStart="15dp"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content">-->
-
-<!--                    <ImageButton-->
-<!--                        android:src="@drawable/ic_baseline_arrow_upward"-->
-<!--                        android:background="@drawable/shpae_rectangle"-->
-<!--                        android:layout_width="35dp"-->
-<!--                        android:layout_height="30dp"-->
-<!--                        app:tint="@color/blue80" />-->
-
-<!--                    <TextView-->
-<!--                        android:text="@string/pay"-->
-<!--                        android:textColor="@color/white"-->
-<!--                        android:layout_marginTop="8dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                </LinearLayout>-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_marginStart="15dp"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content">-->
-
-<!--                    <ImageButton-->
-<!--                        android:src="@drawable/ic_baseline_add"-->
-<!--                        android:background="@drawable/shpae_rectangle"-->
-<!--                        android:layout_marginStart="10dp"-->
-<!--                        android:layout_width="35dp"-->
-<!--                        android:layout_height="30dp"-->
-<!--                        app:tint="@color/blue80" />-->
-
-<!--                    <TextView-->
-<!--                        android:text="@string/add"-->
-<!--                        android:textColor="@color/white"-->
-<!--                        android:layout_marginTop="8dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                </LinearLayout>-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_marginStart="15dp"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content">-->
-
-<!--                    <ImageButton-->
-<!--                        android:src="@drawable/ic_rocket"-->
-<!--                        android:background="@drawable/shpae_rectangle"-->
-<!--                        android:layout_marginStart="7dp"-->
-<!--                        android:layout_width="35dp"-->
-<!--                        android:layout_height="30dp"-->
-<!--                        app:tint="@color/blue80" />-->
-
-<!--                    <TextView-->
-<!--                        android:text="@string/eksplor"-->
-<!--                        android:textColor="@color/white"-->
-<!--                        android:layout_marginTop="8dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                </LinearLayout>-->
-
-<!--            </LinearLayout>-->
-
-<!--            <LinearLayout-->
-<!--                android:id="@+id/icon_group"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/toolbar_second"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                android:orientation="horizontal"-->
-<!--                android:padding="10dp"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent">-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_marginStart="20dp"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content">-->
-
-<!--                    <ImageButton-->
-<!--                        android:src="@drawable/ic_motorbike"-->
-<!--                        android:background="@drawable/shpae_rectangle"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:layout_width="60dp"-->
-<!--                        android:layout_height="60dp"/>-->
-
-<!--                    <TextView-->
-<!--                        android:text="@string/goride"-->
-<!--                        android:layout_marginStart="7dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                </LinearLayout>-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_marginStart="35dp"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content">-->
-
-<!--                    <ImageButton-->
-<!--                        android:src="@drawable/ic_car"-->
-<!--                        android:background="@drawable/shpae_rectangle"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:layout_width="60dp"-->
-<!--                        android:layout_height="60dp"/>-->
-
-<!--                    <TextView-->
-<!--                        android:text="@string/gocar"-->
-<!--                        android:layout_marginStart="7dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                </LinearLayout>-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_marginStart="35dp"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content">-->
-
-<!--                    <ImageButton-->
-<!--                        android:src="@drawable/ic_spoon_and_fork"-->
-<!--                        android:background="@drawable/shpae_rectangle"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:layout_width="60dp"-->
-<!--                        android:layout_height="60dp"/>-->
-
-<!--                    <TextView-->
-<!--                        android:text="@string/gofood"-->
-<!--                        android:layout_marginStart="7dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                </LinearLayout>-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_marginStart="35dp"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content">-->
-
-<!--                    <ImageButton-->
-<!--                        android:src="@drawable/ic_resource_package"-->
-<!--                        android:background="@drawable/shpae_rectangle"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:layout_width="60dp"-->
-<!--                        android:layout_height="60dp"/>-->
-
-<!--                    <TextView-->
-<!--                        android:text="@string/gosend"-->
-<!--                        android:layout_marginStart="7dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                </LinearLayout>-->
-<!--            </LinearLayout>-->
-
-<!--            <LinearLayout-->
-<!--                android:id="@+id/icon_group_second"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/icon_group"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                android:orientation="horizontal"-->
-<!--                android:padding="10dp"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent">-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_marginStart="20dp"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content">-->
-
-<!--                    <ImageButton-->
-<!--                        android:src="@drawable/ic_basket"-->
-<!--                        android:background="@drawable/shpae_rectangle"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:layout_width="60dp"-->
-<!--                        android:layout_height="60dp"/>-->
-
-<!--                    <TextView-->
-<!--                        android:text="@string/gomart"-->
-<!--                        android:layout_marginStart="7dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                </LinearLayout>-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_marginStart="35dp"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content">-->
-
-<!--                    <ImageButton-->
-<!--                        android:src="@drawable/ic_smartphone"-->
-<!--                        android:background="@drawable/shpae_rectangle"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:layout_width="60dp"-->
-<!--                        android:layout_height="60dp"/>-->
-
-<!--                    <TextView-->
-<!--                        android:text="@string/gopulsa"-->
-<!--                        android:layout_marginStart="3dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                </LinearLayout>-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_marginStart="35dp"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content">-->
-
-<!--                    <ImageButton-->
-<!--                        android:src="@drawable/ic_check_in"-->
-<!--                        android:background="@drawable/shpae_rectangle"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:layout_width="60dp"-->
-<!--                        android:layout_height="60dp"/>-->
-
-<!--                    <TextView-->
-<!--                        android:text="@string/checkin"-->
-<!--                        android:layout_marginStart="4dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                </LinearLayout>-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_marginStart="35dp"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content">-->
-
-<!--                    <ImageButton-->
-<!--                        android:src="@drawable/ic_other"-->
-<!--                        android:background="@drawable/shpae_rectangle"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:layout_width="60dp"-->
-<!--                        android:layout_height="60dp"/>-->
-
-<!--                    <TextView-->
-<!--                        android:text="@string/lainnya"-->
-<!--                        android:layout_marginStart="5dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                </LinearLayout>-->
-<!--            </LinearLayout>-->
-
-<!--            <LinearLayout-->
-<!--                android:id="@+id/xp"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/icon_group_second"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                android:orientation="horizontal"-->
-<!--                android:background="@drawable/shape_gradient"-->
-<!--                android:padding="10dp"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:layout_marginStart="10dp"-->
-<!--                android:layout_marginEnd="10dp"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content">-->
+<!--        android:orientation="vertical">-->
 
 <!--                <ImageView-->
-<!--                    android:src="@drawable/ic_star"-->
-<!--                    android:layout_marginStart="15dp"-->
-<!--                    android:layout_width="50dp"-->
-<!--                    android:layout_height="55dp" />-->
-
-<!--                <LinearLayout-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:layout_width="250dp"-->
-<!--                    android:layout_height="match_parent">-->
-
-<!--                    <TextView-->
-<!--                        android:text="@string/xp"-->
-<!--                        android:layout_marginStart="15dp"-->
-<!--                        android:textSize="15dp"-->
-<!--                        android:textStyle="bold" android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                    <ProgressBar-->
-<!--                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
-<!--                        android:progress="10"-->
-<!--                        android:layout_marginStart="15dp"-->
-<!--                        android:progressTint="@color/green60"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                    <LinearLayout-->
-<!--                        android:orientation="horizontal"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent">-->
-
-<!--                        <ImageView-->
-<!--                            android:src="@drawable/ic_hourglass"-->
-<!--                            android:layout_marginStart="15dp"-->
-<!--                            android:scaleType="fitStart"-->
-<!--                            android:layout_width="15dp"-->
-<!--                            android:layout_height="wrap_content" />-->
-
-<!--                        <TextView-->
-<!--                            android:text="@string/treasure"-->
-<!--                            android:textSize="10dp"-->
-<!--                            android:layout_marginStart="5dp"-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:layout_height="match_parent" />-->
-<!--                    </LinearLayout>-->
-<!--                </LinearLayout>-->
-
-<!--                <ImageButton-->
-<!--                    android:src="@drawable/ic_baseline_arrow_forward_ios"-->
-<!--                    android:layout_marginStart="30dp"-->
-<!--                    android:layout_marginTop="15dp"-->
-<!--                    android:background="@drawable/shape_radius"-->
+<!--                    android:id="@+id/imageView11"-->
 <!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content" />-->
+<!--                    android:layout_height="180dp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    app:layout_constraintCircleRadius="10dp"-->
+<!--                    app:srcCompat="@drawable/gojek_card_image" />-->
 
-<!--            </LinearLayout>-->
-
-<!--            <TextView-->
-<!--                android:id="@+id/akses"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/xp"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                android:layout_marginTop="15dp"-->
-<!--                android:layout_marginStart="10dp"-->
-<!--                android:text="@string/akses"-->
-<!--                android:textSize="20dp"-->
-<!--                android:textStyle="bold"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content" />-->
-
-<!--            <LinearLayout-->
-<!--                android:id="@+id/voucher"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/akses"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                android:background="@drawable/shape_white"-->
-<!--                android:layout_marginTop="15dp"-->
-<!--                android:layout_marginStart="10dp"-->
-<!--                android:layout_marginEnd="10dp"-->
-<!--                android:padding="15dp"-->
-<!--                android:orientation="vertical"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent">-->
-
-<!--                <LinearLayout-->
-<!--                    android:orientation="horizontal"-->
+<!--                <TextView-->
+<!--                    android:id="@+id/textView13"-->
 <!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent">-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:layout_marginEnd="16dp"-->
+<!--                    android:fontFamily="sans-serif-black"-->
+<!--                    android:text="Festival idaman perempuan! 😍"-->
+<!--                    android:textColor="#000000" />-->
 
-<!--                    <ImageView-->
-<!--                        android:src="@drawable/ic_discount"-->
-<!--                        android:layout_width="25dp"-->
-<!--                        android:layout_height="25dp" />-->
-
-<!--                    <TextView-->
-<!--                        android:text="@string/voucher"-->
-<!--                        android:layout_marginStart="20dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                    <ImageButton-->
-<!--                        android:src="@drawable/ic_baseline_arrow_forward_ios"-->
-<!--                        android:background="@drawable/shape_radius"-->
-<!--                        android:layout_gravity="center"-->
-<!--                        android:layout_marginStart="130dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-<!--                </LinearLayout>-->
-
-<!--                <ImageView-->
-<!--                    android:src="@drawable/shape_white"-->
-<!--                    android:backgroundTint="@color/black"-->
-<!--                    android:layout_marginTop="10dp"-->
+<!--                <TextView-->
+<!--                    android:id="@+id/textView14"-->
 <!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content" />-->
-
-<!--                <LinearLayout-->
-<!--                    android:orientation="horizontal"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent">-->
-
-<!--                    <ImageView-->
-<!--                        android:src="@drawable/ic_spoon_and_fork"-->
-<!--                        android:layout_width="25dp"-->
-<!--                        android:layout_height="25dp" />-->
-
-<!--                    <TextView-->
-<!--                        android:text="@string/resto"-->
-<!--                        android:layout_marginStart="20dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-
-<!--                    <ImageButton-->
-<!--                        android:src="@drawable/ic_baseline_arrow_forward_ios"-->
-<!--                        android:background="@drawable/shape_radius"-->
-<!--                        android:layout_gravity="center"-->
-<!--                        android:layout_marginStart="180dp"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content" />-->
-<!--                </LinearLayout>-->
-<!--            </LinearLayout>-->
-
-<!--            <LinearLayout-->
-<!--                android:id="@+id/advertisement"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/voucher"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                android:orientation="vertical"-->
-<!--                android:layout_marginTop="15dp"-->
-<!--                android:layout_marginStart="10dp"-->
-<!--                android:layout_marginEnd="10dp"-->
-<!--                android:background="@drawable/shpae_rectangle"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content">-->
-
-<!--                <androidx.core.widget.NestedScrollView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent">-->
-
-<!--                    <ImageView-->
-<!--                        android:src="@drawable/gopay_promo"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="20dp" />-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:layout_marginEnd="16dp"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:layout_marginBottom="16dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:singleLine="false"-->
+<!--                    android:text="Temukan kebutuhan cantik-mu hemat pakai GoPay dengan cashback 50%. klik! 👈"-->
+<!--                    app:layout_constraintEnd_toEndOf="@+id/textView13" />-->
 
 
-<!--                </androidx.core.widget.NestedScrollView>-->
-<!--            </LinearLayout>-->
+<!--    </LinearLayout>-->
 
-<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-<!--    </ScrollView>-->
-
-<!--    bottom navbar-->
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
